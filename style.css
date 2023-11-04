@@ -1,0 +1,110 @@
+@property --gradient-angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+body {
+    background: #202022 ;
+    display: grid;
+    place-content: center;
+    min-height: 75vh;
+    min-width: 400px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card {
+    height: 500px;
+    min-width: 400px;
+    background: #25272b;
+    border-radius: 0.5rem ;
+    position: relative ;
+    display: flex;
+    place-content: center;
+}
+
+@keyframes rotation {
+    0% { --gradient-angle: 0deg;}
+    100% { --gradient-angle: 360deg;}
+}
+
+.card::before,
+.card::after {
+    content: "";
+    position: absolute;
+    inset: -5px;
+    z-index: -1;
+    background: linear-gradient(
+        var(--gradient-angle),
+        rgb(69, 117, 189),
+        rgb(62, 165, 158),
+        rgb(240, 222, 63)
+    );
+    border-radius: inherit;
+    animation: rotation 15s linear infinite;
+}
+
+.card::after {
+    filter: blur(3rem);
+}
+
+.icon {
+    height: 55px;
+}
+
+a{
+    color : transparent;
+}
+
+.iconbox {
+    display: grid;
+    place-content: center;
+    width :70px ;
+    height : 70px;
+    margin : 20px;
+    border-radius : 50px;
+    z-index : 1 ;
+}
+
+
+.iconbox.discord { 
+    background : rgb(69, 117, 189);
+}
+
+.iconbox.telegram { 
+    background : rgb(62, 165, 158);
+}
+
+.iconbox.snap { 
+    background : rgb(240, 222, 63);
+}
+
+.container {
+    display: flex;
+    margin-top : 15px;
+    border :0;
+}
+
+.blur {
+    z-index: 0 ;
+    position : absolute;
+    height : 70px;
+    width: 70px ;
+    margin : 20px;
+    border-radius : 50px;
+    filter : blur(1rem)
+}
+
+.blur.discord{
+    background: rgb(69, 117, 189);
+}
+
+.blur.snap{
+    left : 255px;
+    background: rgb(240, 222, 63);
+}
+
+.blur.telegram{
+    left : 145px;
+    background: rgb(62, 165, 158);
+}

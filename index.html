@@ -1,70 +1,41 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Carrd</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardd</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300&display=swap" rel="stylesheet">
 </head>
-
-<body class="bg-slate-800">
-    
-    <div class="bg-transparent container mx-auto divide-y shadow-md " style="width:465px; margin: top 10px;">
-
-        <div class="bg-transparent rounded-md">
-            <div class="h-36 w-full self-center bg-slate-700 mx-auto rounded">
-
-               <div class="grid grid-cols-3 gap-1 justify-items-center" >
-
-                    <div class="bg-blue-500 hover:bg-blue-600 rounded-full h-20 w-20 shadow-md static flex items-center transition-colors duration-300 ease-in-out delay-300" style="margin-top:20%;">
-
-                        <a href="https://www.discordapp.com/users/859783094147088414" >
-                            <img src="./img/discord.svg" class="h-16 ml-2 mb-0.5 shadow-mb"  alt="Svg">
-                        </a>
-                        
-                    </div>
-
-                    <div class="bg-cyan-400 hover:bg-cyan-500 rounded-full h-20 w-20 shadow-md static flex items-center transition-colors duration-300 ease-in-out delay-300" style="margin-top:20%;">
-                        <a href="https://t.me/wymphil" >
-                            <img src="./img/telegram.svg" class="h-16 ml-1 mb-0.5 shadow-mb"  alt="Svg">
-                        </a>
-
-                    </div>
-
-                    <div class="bg-amber-300 hover:bg-amber-400 rounded-full h-20 w-20 shadow-md static flex items-center transition-colors duration-300 ease-in-out delay-300" style="margin-top:20%;">
-
-                        <a href="https://www.snapchat.com/add/wm.phill?share_id=INo7Qjrs5qk&locale=en-US" >
-                            <img src="./img/snapchat.svg" class="h-17 mb-0.5 shadow-mb"  alt="Svg">
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-
-        <div class="h-96 w-full self-center bg-slate-700 rounded-md mt-2 border-transparent">
-            <h1 class="text-4xl pt-2.5 mx-36 text-slate-100">About Me</h1>
-            <p class="text-slate-200 mx-4 mt-6 ">Hello, im Phill i am a starter programmer,
-                 Im currently enhancing my skills, my goals for now are to pass grade 8 
-                and further in the future i hope to be accepted i my dream colege.
-                 I want to get a degree in computer science and software engineering in order to pursue my dream job.
-                 My dream jos for now is to be a software engineer over at either Google or Amazon.</p>
-
-
-                 <p class="text-slate-200 mx-4 mt-6">
-                To contact me use the icons above 🙂 . 
-                 </p>
-
-        </div>
+<body>
+    <div class="card">
         
-        <div class="h-32 w-full self-center bg-slate-700 mx-auto rounded mt-2 border-transparent ">
-            <img src="./img/image.png" class="h-32 w-full self-center rounded-md" alt="Img">
-        </div>
-
+       <div class="container">
+            <div class="blur discord"></div>
+           <div class="iconbox discord">
+               <a href="https://www.discordapp.com/users/859783094147088414">
+                   <img src="./assets/discord.svg" class="icon" alt="Svg">
+                </a>
+            </div>
+            <div class="blur telegram"></div>
+            <div class="iconbox telegram">
+                <a href="https://t.me/wymphil">
+                    <img src="./assets/telegram.svg" class="icon" alt="Svg">
+                </a>
+            </div>
+            <div class="blur snap"></div>
+            <div class="iconbox snap">
+                <a href="https://www.snapchat.com/add/wm.phill?share_id=INo7Qjrs5qk&locale=en-US">
+                    <img src="./assets/snapchat.svg" class="icon" alt="Svg">
+                </a>
+            </div>
+            
+        </div> 
+            
+            
     </div>
-
-    
 </body>
-
 </html>
