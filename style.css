@@ -41,7 +41,7 @@ body {
         rgb(240, 222, 63)
     );
     border-radius: inherit;
-    animation: rotation 15s linear infinite;
+    animation: rotation 5s linear infinite;
 }
 
 .card::after {
